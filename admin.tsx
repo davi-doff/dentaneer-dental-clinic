@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { useAppointments } from './context/AppointmentsContext';
+import { useAppointments } from './context/AppointmentsContext.tsx';
 
 export const AdminPage: React.FC = () => {
     const { appointments, removeAppointment } = useAppointments();

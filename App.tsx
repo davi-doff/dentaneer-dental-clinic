@@ -1,10 +1,10 @@
 
 import React, { useState } from 'react';
 import { Routes, Route, NavLink, Link } from 'react-router-dom';
-import { AppointmentsProvider } from './context/AppointmentsContext';
-import { HomePage, ServicesPage, DentistsPage, ReviewsPage, BlogPage, FaqPage, ContactPage, BookingPage } from './pages';
-import { AdminPage } from './admin';
-import { GuidesPage } from './guides';
+import { AppointmentsProvider } from './context/AppointmentsContext.tsx';
+import { HomePage, ServicesPage, DentistsPage, ReviewsPage, BlogPage, FaqPage, ContactPage, BookingPage } from './pages.tsx';
+import { AdminPage } from './admin.tsx';
+import { GuidesPage } from './guides.tsx';
 
 // --- Icon Components ---
 const MenuIcon: React.FC<{ className?: string }> = ({ className }) => (

@@ -1,4 +1,5 @@
-import type { Dentist, Service, Review, BlogPost, FaqItem } from './types';
+
+import type { Dentist, Service, Review, BlogPost, FaqItem } from './types.ts';
 import React from 'react';
 
 // FIX: Convert SVG icon components from JSX to React.createElement calls to fix TypeScript errors in a .ts file.

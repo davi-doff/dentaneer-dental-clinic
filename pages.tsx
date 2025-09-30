@@ -1,9 +1,9 @@
 
 import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { DENTISTS, SERVICES, REVIEWS, BLOG_POSTS, FAQ_ITEMS } from './data';
-import type { Dentist, Service, Review, BlogPost, FaqItem } from './types';
-import { useAppointments } from './context/AppointmentsContext';
+import { DENTISTS, SERVICES, REVIEWS, BLOG_POSTS, FAQ_ITEMS } from './data.ts';
+import type { Dentist, Service, Review, BlogPost, FaqItem } from './types.ts';
+import { useAppointments } from './context/AppointmentsContext.tsx';
 
 // --- Reusable UI Components ---
 const Card: React.FC<{ children: React.ReactNode; className?: string }> = ({ children, className = '' }) => (
