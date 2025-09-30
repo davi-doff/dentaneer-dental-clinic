@@ -41,14 +41,15 @@
       }
     </style>
 
-    <!-- STEP 1: Load Core Libraries -->
+    <!-- STEP 1: Load Core Libraries (These create global variables: React, ReactDOM, ReactRouterDOM) -->
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-router-dom@6/umd/react-router-dom.development.js" crossorigin></script>
     
     <!-- STEP 2: Load Babel for JSX/TSX Transpilation -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <script type="importmap">
+    
+<script type="importmap">
 {
   "imports": {
     "react": "https://aistudiocdn.com/react@^19.1.1",
@@ -58,10 +59,12 @@
   }
 }
 </script>
+<link rel="stylesheet" href="/index.css">
 </head>
   <body>
     <div id="root"></div>
     <!-- STEP 3: Load and transpile our application code -->
-    <script type="text/babel" data-type="module" src="/index.tsx"></script>
-  </body>
+    <script type="text/babel" src="/index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
 </html>

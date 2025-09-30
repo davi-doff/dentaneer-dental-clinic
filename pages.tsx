@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { DENTISTS, SERVICES, REVIEWS, BLOG_POSTS, FAQ_ITEMS } from './data.ts';

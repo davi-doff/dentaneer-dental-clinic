@@ -1,5 +1,5 @@
 // FIX: Import React type to resolve 'Cannot find namespace React' error.
-import type React from 'react';
+// import type React from 'react';
 
 export interface Dentist {
   id: number;
