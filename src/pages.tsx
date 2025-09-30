@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { DENTISTS, SERVICES, REVIEWS, BLOG_POSTS, FAQ_ITEMS } from './data.ts';
+import { DENTISTS, SERVICES, REVIEWS, BLOG_POSTS, FAQ_ITEMS } from './data.tsx';
 import type { Dentist, Service, Review, BlogPost, FaqItem } from './types.ts';
 import { useAppointments } from './context/AppointmentsContext.tsx';
 
