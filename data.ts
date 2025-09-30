@@ -1,11 +1,6 @@
-
-
-
-import type { Dentist, Service, Review, BlogPost, FaqItem } from './types.ts';
 import React from 'react';
+import type { Dentist, Service, Review, BlogPost, FaqItem } from './types.ts';
 
-// FIX: Convert SVG icon components from JSX to React.createElement calls to fix TypeScript errors in a .ts file.
-// A simple Tooth Icon component for demonstration
 const ToothIcon: React.FC<{ className?: string }> = ({ className }) => (
   React.createElement('svg', { className, xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", fill: "currentColor" },
     React.createElement('path', { d: "M12 2C9.25 2 7 4.25 7 7C7 8.85 8.1 10.45 9.65 11.25C8.82 12.35 8.25 13.63 8.25 15C8.25 17.07 9.93 18.75 12 18.75C14.07 18.75 15.75 17.07 15.75 15C15.75 13.63 15.18 12.35 14.35 11.25C15.9 10.45 17 8.85 17 7C17 4.25 14.75 2 12 2ZM11 20V22H13V20H11Z" })

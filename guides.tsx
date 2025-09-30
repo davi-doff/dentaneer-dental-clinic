@@ -7,12 +7,6 @@ const GuideContent: React.FC<{ title: string; children: React.ReactNode }> = ({ 
   </div>
 );
 
-const CodeBlock: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <pre className="bg-gray-100 p-4 rounded-md text-sm overflow-x-auto">
-    <code>{children}</code>
-  </pre>
-);
-
 export const GuidesPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'deploy' | 'maintain'>('deploy');
 
