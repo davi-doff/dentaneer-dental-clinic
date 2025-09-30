@@ -1,0 +1,5 @@
+{
+  "name": "Pastel Dental Clinic",
+  "description": "A modern, responsive web application for a dental clinic, featuring appointment booking, dentist profiles, service listings, and an admin dashboard. Built with React, TypeScript, and Tailwind CSS.",
+  "requestFramePermissions": []
+}
