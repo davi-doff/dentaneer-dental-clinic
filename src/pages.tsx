@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { DENTISTS, SERVICES, REVIEWS, BLOG_POSTS, FAQ_ITEMS } from './data.tsx';
+// FIX: Corrected import paths to be relative to the src directory.
+import { DENTISTS, SERVICES, REVIEWS, BLOG_POSTS, FAQ_ITEMS } from './data.ts';
 import type { Dentist, Service, Review, BlogPost, FaqItem } from './types.ts';
 import { useAppointments } from './context/AppointmentsContext.tsx';
 
@@ -59,7 +60,8 @@ const FaqAccordionItem: React.FC<{ item: FaqItem }> = ({ item }) => {
 export const HomePage: React.FC = () => (
   <div className="space-y-16">
     <section className="bg-pastel-green-100 rounded-lg p-8 text-center">
-      <h1 className="text-4xl md:text-5xl font-bold text-pastel-green-900 mb-4">คลินิกทันตกรรมเด็นเทนเนียร์</h1>
+      {/* FIX: Updated brand name for consistency with App.tsx */}
+      <h1 className="text-4xl md:text-5xl font-bold text-pastel-green-900 mb-4">Dentaneer Dental Clinic</h1>
       <p className="text-lg text-pastel-green-800 mb-6">เรามอบรอยยิ้มที่สดใส พร้อมบริการด้วยใจ</p>
       <Link to="/booking" className="bg-pastel-green-600 text-white font-bold py-3 px-8 rounded-full hover:bg-pastel-green-700 transition-colors text-lg">
         นัดหมายทันตแพทย์
@@ -162,13 +164,14 @@ export const ContactPage: React.FC = () => (
         <Card className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2">
                  <div className="p-8 bg-pastel-green-600 text-white rounded-l-xl">
+                    {/* FIX: Updated brand name and contact details for consistency */}
                     <h3 className="text-2xl font-bold mb-4">Dentaneer Dental Clinic</h3>
                     <p>เราพร้อมดูแลรอยยิ้มของคุณ</p>
                     <div className="mt-8 space-y-4">
                         <p><strong>โทร:</strong> 02-123-4567</p>
                         <p><strong>อีเมล:</strong> contact@dentaneerdental.com</p>
                         <p><strong>Line:</strong> @dentaneerdental</p>
-                        <p><strong>Facebook:</strong> /dentaneerdentalclinic</p>
+                        <p><strong>Facebook:</strong> /dentaneerdental</p>
                     </div>
                 </div>
                 <div className="p-8">
